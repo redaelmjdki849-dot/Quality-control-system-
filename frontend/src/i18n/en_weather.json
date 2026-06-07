@@ -1,0 +1,20 @@
+{
+  "header": {
+    "weather": "Weather Dashboard"
+  },
+  "weather": {
+    "searchCity": "Enter city name...",
+    "feelsLike": "Feels Like",
+    "humidity": "Humidity",
+    "windSpeed": "Wind Speed",
+    "pressure": "Pressure",
+    "cloudiness": "Cloudiness",
+    "visibility": "Visibility",
+    "sunrise": "Sunrise",
+    "sunset": "Sunset",
+    "forecast": "5-Day Forecast"
+  },
+  "buttons": {
+    "search": "Search"
+  }
+}

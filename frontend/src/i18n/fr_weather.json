@@ -1,0 +1,20 @@
+{
+  "header": {
+    "weather": "Tableau de Bord Météorologique"
+  },
+  "weather": {
+    "searchCity": "Entrez le nom de la ville...",
+    "feelsLike": "Ressenti",
+    "humidity": "Humidité",
+    "windSpeed": "Vitesse du vent",
+    "pressure": "Pression",
+    "cloudiness": "Nébulosité",
+    "visibility": "Visibilité",
+    "sunrise": "Lever du soleil",
+    "sunset": "Coucher du soleil",
+    "forecast": "Prévisions 5 jours"
+  },
+  "buttons": {
+    "search": "Rechercher"
+  }
+}

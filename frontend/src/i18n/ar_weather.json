@@ -1,0 +1,20 @@
+{
+  "header": {
+    "weather": "لوحة الطقس"
+  },
+  "weather": {
+    "searchCity": "أدخل اسم المدينة...",
+    "feelsLike": "يشعر وكأنه",
+    "humidity": "الرطوبة",
+    "windSpeed": "سرعة الرياح",
+    "pressure": "الضغط",
+    "cloudiness": "الغيوم",
+    "visibility": "الرؤية",
+    "sunrise": "شروق الشمس",
+    "sunset": "غروب الشمس",
+    "forecast": "توقعات 5 أيام"
+  },
+  "buttons": {
+    "search": "بحث"
+  }
+}

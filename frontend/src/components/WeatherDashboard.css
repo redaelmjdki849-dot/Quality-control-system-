@@ -1,0 +1,262 @@
+/* Weather Dashboard Styles - أنماط لوحة الطقس */
+
+.weather-dashboard {
+  padding: 20px;
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  min-height: 100vh;
+  color: #fff;
+}
+
+.weather-dashboard h1 {
+  text-align: center;
+  font-size: 2.5em;
+  margin-bottom: 30px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Search Bar - شريط البحث */
+.weather-search {
+  display: flex;
+  gap: 10px;
+  max-width: 600px;
+  margin: 0 auto 30px;
+  padding: 20px;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 10px;
+  backdrop-filter: blur(10px);
+}
+
+.search-input {
+  flex: 1;
+  padding: 12px 15px;
+  border: none;
+  border-radius: 8px;
+  font-size: 1em;
+  background: rgba(255, 255, 255, 0.9);
+  color: #333;
+}
+
+.search-input::placeholder {
+  color: #999;
+}
+
+.search-btn {
+  padding: 12px 20px;
+  background: #ff6b6b;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.search-btn:hover {
+  background: #ff5252;
+  transform: scale(1.05);
+}
+
+/* Error Message - رسالة الخطأ */
+.error-message {
+  background: rgba(255, 0, 0, 0.8);
+  padding: 15px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+  text-align: center;
+  font-weight: bold;
+}
+
+/* Current Weather Card - بطاقة الطقس الحالي */
+.weather-card {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 30px;
+  margin-bottom: 30px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.weather-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.weather-header h2 {
+  font-size: 2em;
+  margin: 0;
+}
+
+.weather-icon {
+  width: 100px;
+  height: 100px;
+  filter: drop-shadow(0 4px 8px rgba(0, 0, 0, 0.3));
+}
+
+.weather-main {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 30px;
+  padding-bottom: 30px;
+  border-bottom: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.temperature {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.temp-value {
+  font-size: 4em;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.temp-description {
+  font-size: 1.2em;
+  text-transform: capitalize;
+}
+
+.feels-like {
+  font-size: 1.3em;
+}
+
+/* Weather Details Grid - شبكة تفاصيل الطقس */
+.weather-details-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  gap: 15px;
+}
+
+.detail-item {
+  background: rgba(255, 255, 255, 0.1);
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  text-align: center;
+}
+
+.detail-label {
+  font-size: 0.9em;
+  opacity: 0.8;
+  font-weight: 500;
+}
+
+.detail-value {
+  font-size: 1.3em;
+  font-weight: bold;
+}
+
+/* Forecast Section - قسم التوقعات */
+.forecast-section {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 30px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.forecast-section h3 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.forecast-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 15px;
+}
+
+.forecast-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 12px;
+  padding: 15px;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  text-align: center;
+  transition: all 0.3s ease;
+}
+
+.forecast-card:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+}
+
+.forecast-time {
+  font-size: 0.85em;
+  opacity: 0.8;
+  margin-bottom: 8px;
+}
+
+.forecast-icon {
+  width: 50px;
+  height: 50px;
+  margin: 0 auto 8px;
+}
+
+.forecast-temp {
+  font-size: 1.2em;
+  font-weight: bold;
+  margin-bottom: 5px;
+}
+
+.forecast-humidity,
+.forecast-rain {
+  font-size: 0.9em;
+  opacity: 0.8;
+}
+
+.weather-loading {
+  text-align: center;
+  padding: 40px;
+  font-size: 1.3em;
+  color: white;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+}
+
+/* Responsive Design - التصميم المستجيب */
+@media (max-width: 768px) {
+  .weather-dashboard {
+    padding: 10px;
+  }
+  
+  .weather-dashboard h1 {
+    font-size: 1.8em;
+  }
+  
+  .weather-search {
+    flex-direction: column;
+  }
+  
+  .weather-card,
+  .forecast-section {
+    padding: 20px;
+  }
+  
+  .weather-header {
+    flex-direction: column;
+    gap: 10px;
+  }
+  
+  .temp-value {
+    font-size: 2.5em;
+  }
+  
+  .weather-main {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+  
+  .forecast-grid {
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+  }
+}
