@@ -1,0 +1,44 @@
+{
+  "header": {
+    "title": "Quality Control Management System",
+    "company": "Quality Solutions Sorting And Rework",
+    "language": "Language"
+  },
+  "navigation": {
+    "dashboard": "Dashboard",
+    "records": "Records",
+    "inventory": "Inventory",
+    "reports": "Reports",
+    "settings": "Settings"
+  },
+  "fields": {
+    "nomFournisseur": "Supplier Name",
+    "partNumber": "Part Number",
+    "numberCarton": "Carton Number",
+    "batchNumber": "Batch Number",
+    "site": "Site",
+    "pcsOk": "Good Pieces",
+    "pcsNok": "Defective Pieces",
+    "pcsTotal": "Total Pieces",
+    "totalStock": "Total Stock",
+    "date": "Date",
+    "month": "Month",
+    "notes": "Notes"
+  },
+  "buttons": {
+    "add": "Add",
+    "edit": "Edit",
+    "delete": "Delete",
+    "save": "Save",
+    "cancel": "Cancel",
+    "submit": "Submit",
+    "export": "Export",
+    "filter": "Filter"
+  },
+  "messages": {
+    "success": "Operation successful",
+    "error": "An error occurred",
+    "loading": "Loading...",
+    "noData": "No data available"
+  }
+}

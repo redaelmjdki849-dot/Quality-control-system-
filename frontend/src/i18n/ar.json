@@ -1,0 +1,44 @@
+{
+  "header": {
+    "title": "نظام إدارة الجودة",
+    "company": "Quality Solutions Sorting And Rework",
+    "language": "اللغة"
+  },
+  "navigation": {
+    "dashboard": "لوحة التحكم",
+    "records": "السجلات",
+    "inventory": "المخزون",
+    "reports": "التقارير",
+    "settings": "الإعدادات"
+  },
+  "fields": {
+    "nomFournisseur": "اسم المورد",
+    "partNumber": "رقم القطعة",
+    "numberCarton": "رقم الكرتون",
+    "batchNumber": "رقم الدفعة",
+    "site": "الموقع",
+    "pcsOk": "القطع السليمة",
+    "pcsNok": "القطع المعيبة",
+    "pcsTotal": "إجمالي القطع",
+    "totalStock": "إجمالي المخزون",
+    "date": "التاريخ",
+    "month": "الشهر",
+    "notes": "ملاحظات"
+  },
+  "buttons": {
+    "add": "إضافة",
+    "edit": "تعديل",
+    "delete": "حذف",
+    "save": "حفظ",
+    "cancel": "إلغاء",
+    "submit": "إرسال",
+    "export": "تصدير",
+    "filter": "تصفية"
+  },
+  "messages": {
+    "success": "تمت العملية بنجاح",
+    "error": "حدث خطأ",
+    "loading": "جاري التحميل...",
+    "noData": "لا توجد بيانات متاحة"
+  }
+}

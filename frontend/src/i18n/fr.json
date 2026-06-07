@@ -1,0 +1,44 @@
+{
+  "header": {
+    "title": "Système de Gestion de Qualité",
+    "company": "Quality Solutions Tri et Rework",
+    "language": "Langue"
+  },
+  "navigation": {
+    "dashboard": "Tableau de bord",
+    "records": "Enregistrements",
+    "inventory": "Inventaire",
+    "reports": "Rapports",
+    "settings": "Paramètres"
+  },
+  "fields": {
+    "nomFournisseur": "Nom du Fournisseur",
+    "partNumber": "Numéro de Pièce",
+    "numberCarton": "Numéro de Carton",
+    "batchNumber": "Numéro de Lot",
+    "site": "Site",
+    "pcsOk": "Pièces OK",
+    "pcsNok": "Pièces NOK",
+    "pcsTotal": "Pièces Totales",
+    "totalStock": "Stock Total",
+    "date": "Date",
+    "month": "Mois",
+    "notes": "Notes"
+  },
+  "buttons": {
+    "add": "Ajouter",
+    "edit": "Modifier",
+    "delete": "Supprimer",
+    "save": "Enregistrer",
+    "cancel": "Annuler",
+    "submit": "Soumettre",
+    "export": "Exporter",
+    "filter": "Filtrer"
+  },
+  "messages": {
+    "success": "Opération réussie",
+    "error": "Une erreur s'est produite",
+    "loading": "Chargement...",
+    "noData": "Aucune donnée disponible"
+  }
+}
