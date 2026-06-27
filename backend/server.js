@@ -1,38 +1,48 @@
-// Backend Server - خادم النسخة الخلفية - Serveur Backend
-
 const express = require('express');
 const mongoose = require('mongoose');
+const cors = require('cors');
+const morgan = require('morgan');
 require('dotenv').config();
 
 const app = express();
-const PORT = process.env.PORT || 5000;
 
 // Middleware
+app.use(cors());
+app.use(morgan('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 
-// CORS
-app.use((req, res, next) => {
-  res.header('Access-Control-Allow-Origin', '*');
-  res.header('Access-Control-Allow-Headers', 'Origin, X-Requested-With, Content-Type, Accept');
-  next();
-});
-
 // Database Connection
 mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost:27017/quality-control')
-  .then(() => console.log('✅ Database Connected | قاعدة البيانات متصلة'))
-  .catch(err => console.log('❌ Database Error:', err));
+  .then(() => console.log('✅ MongoDB Connected'))
+  .catch(err => console.log('❌ MongoDB Error:', err));
 
-// Routes - الطرق
+// Routes
+app.use('/api/auth', require('./routes/auth'));
+app.use('/api/attendance', require('./routes/attendance'));
+app.use('/api/transport', require('./routes/transport'));
+app.use('/api/dashboard', require('./routes/dashboard'));
+app.use('/api/users', require('./routes/users'));
+
+// Health Check
 app.get('/api/health', (req, res) => {
   res.json({ status: 'OK', message: 'Server is running' });
 });
 
-// Server Start
+// 404 Handler
+app.use((req, res) => {
+  res.status(404).json({ error: 'Route not found' });
+});
+
+// Error Handler
+app.use((err, req, res, next) => {
+  console.error(err);
+  res.status(500).json({ error: 'Internal server error' });
+});
+
+const PORT = process.env.PORT || 5000;
 app.listen(PORT, () => {
   console.log(`🚀 Server running on port ${PORT}`);
-  console.log(`🚀 الخادم يعمل على المنفذ ${PORT}`);
-  console.log(`🚀 Le serveur s'exécute sur le port ${PORT}`);
 });
 
 module.exports = app;
